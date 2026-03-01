@@ -11,7 +11,7 @@ import { DateSelector } from "./components/DateSelector";
 import { SwapButton } from "./components/SwapButton";
 import { ResultCard } from "./components/ResultCard";
 
-export default function InflationCalculator(): {
+export default function InflationCalculator() {
   const dataset = useMemo(() => parseCPIDataset(CPI_RAW), []);
   const lastEntry = dataset.entries[dataset.entries.length - 1];
 
